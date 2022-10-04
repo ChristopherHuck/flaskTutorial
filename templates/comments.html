@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Your comment</h1>
+
+<h1>Previous comments</h1>
+<div>
+    {% for comment in comments %}
+
+    <p>{{ comment }}</p>
+
+    {% endfor %}
+</div>
+
+{% endblock %}
