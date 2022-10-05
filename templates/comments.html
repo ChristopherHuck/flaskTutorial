@@ -2,8 +2,12 @@
 
 {% block content %}
 <h1>Your comment</h1>
-
+<form method="post" action="/comments">
+    <input name="comment" type="text" placeholder="Enter a comment" autofocus="true">
+    <button type="submit">Send</button>
+</form>
 <h1>Previous comments</h1>
+
 <div>
     {% for comment in comments %}
 
